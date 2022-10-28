@@ -1,24 +1,28 @@
 <DOCTYPE html></DOCTYPE>
 <html>
     <head>
+        <meta charset="utf-8" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway"
+            rel="stylesheet"
+            />
         <link rel="stylesheet" href="../css/style.css" />
-        <meta charset="utf-8"/>
-        <title>welcome to Dashboard</title>
+        <title>Create your Profile</title>
     </head>
     <body>
-        <nav>
-            <a class="btn" href="index.html">DevConnector</a>
-            <a href="index.html">Developers Connector</a>
-            <a href="profiles.html">Developers</a>
-            <a href="Sign Up.html">Sign Up</a>
-            <a href="Sign In.html">Sign In</a>
-        </nav> 
-        <section>
-            <h1>Create your Profile</h1>
-            <h2>Let's make your profile Stand out</h2>
+        <section class="container">
+            <h1 class="large text-primary">Create your Profile</h1>
+            <p class="lead"><i class="fas fa-solid fa-user"></i>  Let's make your profile Stand out</p>
             <small>*required data</small>
-            <form>
-                <div>
+            <form class="form">
+                <div class="form-group">
                     <select>
                         <option value="0">* Select Professional Status</option>
                         <option value="Developer">Developer</option>
@@ -32,23 +36,23 @@
                     </select>
                     <small>give us an idea of where you are at in your career</small>
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" placeholder="Company" name="company" />
                     <small>Could be your own company or the one you work for</small>
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" placeholder="website" name="website"/>
                     <small>Could be your own company website</small>
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" placeholder="location" name="location">
                     <small> City and State as suggested(eg.Porto Alegre, Rio Grande do Sul</small>
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="text" placeholder="* Skills" name="* Skills">
                     <small>Please use comma to separate values (eg.HTML,CSS,JavaScript,PHP)</small>
                 </div>
-                <div>
+                <div class="form-group">
                     <Input
                     type="text"
                     placeholder="Github Username"
@@ -56,9 +60,35 @@
                 <small> If you want your latest repos and a Github link, include your username</small>
             </Input>
                 </div>
-                <div> <textarea placeholder="A short bio of yourself" name="bio"></textarea>
+                <div class="form-group"> <textarea placeholder="A short bio of yourself" name="bio"></textarea>
                 <small>Tell us a little more about yourself</small>
                 </div>
+                <div class="form-group">
+                    <button class="btn btn-dark" type="button">Add Social Network Links</button>
+                    <p><small>Optional</small></p>
+                  </div>
+                  <div class="social-input form-group">
+                    <i class="fa-brands fab fa-twitter"></i>
+                    <input type="text" placeholder="Twitter URL" name="twitter" />
+                  </div>
+                  <div class="social-input form-group">
+                    <i class="fa-brands fab fa-facebook fa-square-facebook"></i>
+                    <input type="text" placeholder="Facebook URL" name="facebook" />
+                  </div>
+                  <div class="social-input form-group">
+                    <i class="fa-brands fab fa-youtube"></i>
+                    <input type="text" placeholder="YouTube URL" name="youtube" />
+                  </div>
+                  <div class="social-input form-group">
+                    <i class="fa-brands fab fa-linkedin"></i>
+                    <input type="text" placeholder="Linkedin URL" name="linkedin" />
+                  </div>
+                  <div class="social-input form-group">
+                    <i class="fa-brands fab fa-instagram"></i>
+                    <input type="text" placeholder="Instagram URL" name="instagram" />
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="Submit"/>
+                  <a class="btn btn-light" href="dashboard.html">Go Back</a>
             </form>
         </section>
         <footer>copyright&copy; 2022 KnowlegHut.com</footer>

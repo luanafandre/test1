@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link
+        href="https://fonts.googleapis.com/css?family=Raleway"
+        rel="stylesheet"/>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Add Education</title>
+    </head>
+<body>
+    <section class="container">
+        <h1 class="large text-primary">Add Education</h1>
+        <p class="lead"><i class= "fas fa-solid fa-graduation-cap"></i>Add any school, bootcamp, etc. that you have attended  </p>
+        <small> *= required field</small>
+        <form class="form">
+            <div class="form-group">
+                <input type="text" name="school or bootcamp" value="" placeholder="* School or Bootcamp" required />
+            </div>
+            <div class="form-group">
+                <input type="text" name="degree or certificate" value="" placeholder="* Degree or Certificate" required />
+            </div>
+            <div class="form-group">
+                <input type="text" name="Field of Study" value="" placeholder="Field of Study" required/>
+            </div>
+            <h4>From Date</h4>
+            <div class="form-group">
+                <input type="date" name="from date" placeholder="mm/dd/yyyy" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="Current School or Bootcamp">
+                <span>Current School or Bootcamp</span>
+            </div>
+
+            <h4>To Date</h4>
+            <div class="form-group">
+                <input type="date" name="from date" placeholder="mm/dd/yyyy" >
+            </div>
+            <div>
+                <textarea class="form desc" name="text"  cols="30" rows="5" placeholder="program Description" required></textarea>
+                
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" />
+                <a class="btn btn-light" href="dashboard.html">Go Back</a> 
+            </div>
+        </form>
+
+
+    </section>
+    </body>
+</html>

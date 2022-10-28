@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <meta charset="utf-8" />
+            <link
+            href="https://fonts.googleapis.com/css?family=Raleway"
+            rel="stylesheet"/>
+            <link
+              rel="stylesheet"
+              href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+              crossorigin="anonymous"
+            />
+            <link rel="stylesheet" href="../css/style.css" />
+        <title>Add New Experience</title>
+    </head>
+    <body>
+        
+        <section class="container">
+            <h1 class="large text-primary">Add an Experience</h1>
+            <p class="lead"><i class="fas fa-regular fa-sitemap"></i> Add any developer/programming positions that you have had in the past</p>
+            <small>*= required field</small>
+            <form class="form">
+                <div class="form-group">
+                    <input type="text" name="job title" value="" placeholder=" * Job Title" required/>
+                </div>
+                <div class="form-group">
+                    <input type="text"  name="company" value="" placeholder=" * Company" required/>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="location" value="" placeholder=" * Location" required/>
+                </div>
+                <div class="form-group">
+                    <h5>From Date *</h5>
+                    <input type="date" name="from date" value="" placeholder="mm/dd/yyyy" required/>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="current job" >
+                    <span>Current job</span>
+                </div>
+                <div class="form-group">
+                    <h5>To Date *</h5>
+                    <input type="date" name="to date" value="" placeholder="mm/dd/yyyy" required/>
+                </div>
+                <div class="form-group">
+                    <textarea class="form desc" placeholder="Job Description" name="job description"></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit" />
+                <a class="btn btn-light" href="dashboard.html">Go Back</a>     
+            </form>
+        </section>
+    </body>
+</html>
