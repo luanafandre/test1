@@ -351,6 +351,7 @@ button {
 
 /* Profiles Page */
 .profile {
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
   align-items: center;
